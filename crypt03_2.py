@@ -29,8 +29,8 @@ def englishDetection(s):
                 englishness += f[low_letter]
         rating_combo = (englishness,each_result)
         english_results.append(rating_combo)
-    return sorted(english_results)[-10:]
+    return max(english_results)
 
 # Test inputs for cryptopals s1-c3 PART 2/2
-x = '1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'
-print englishDetection(xorbrute(x.decode('hex')))
+#x = '1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'
+#print englishDetection(xorbrute(x.decode('hex')))
