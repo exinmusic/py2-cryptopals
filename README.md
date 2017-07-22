@@ -12,7 +12,7 @@
 - [ ] Detect AES in ECB mode
 
 ## Last Completed Problem
-Set1 Challenge3
+Set1 Challenge4
 ```python
 from crypt03_2 import englishDetection as engdetec
 from crypt03_1 import SingleByteXorBrute as xorbrute
