@@ -1,19 +1,5 @@
-# 🔐 Cryptopals Challenge
-### 🐍 in Python 2.7
+# Repeating Key Exclusive Or
 
-## Challenge Set 1
-- [x] Convert hex to base64
-- [x] Fixed XOR
-- [x] Single-byte XOR cipher
-- [x] Detect single-character XOR
-- [x] Implement repeating-key XOR
-- [ ] Break repeating-key XOR
-- [ ] AES in ECB mode
-- [ ] Detect AES in ECB mode
-
-## Last Completed Problem
-Set1 Challenge5 - Repeating Key Exclusive Or
-```python
 def repeatingByteXor(in1, key1):
     chrs = ''
     keyCount = 0
@@ -33,4 +19,3 @@ def repeatingByteXor(in1, key1):
 in1 = "Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal"
 key1 = 'ICE'
 print repeatingByteXor(in1,key1)
-```
