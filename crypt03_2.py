@@ -1,6 +1,6 @@
 # English string detector
 
-from crypt03_1 import SingleByteXorBrute as xorbrute
+from crypt03_1 import singleByteXorBrute as xorbrute
 
 def englishDetection(s):
 
@@ -23,10 +23,11 @@ def englishDetection(s):
 
     for each_result in brute_results:
         englishness = 0
-        for each_letter in each_result:
+        for each_letter in each_result[0]:
             low_letter = each_letter.lower()
             if low_letter in f:
                 englishness += f[low_letter]
+
         rating_combo = (englishness,each_result)
         english_results.append(rating_combo)
     return max(english_results)
