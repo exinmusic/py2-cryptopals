@@ -1,11 +1,11 @@
 from crypt03_2 import englishDetection as engdetec
-from crypt03_1 import SingleByteXorBrute as xorbrute
+from crypt03_1 import singleByteXorBrute as xorbrute
 import urllib2
 
-def xorEngHandler(loh):
+def xorEngHandler(in1):
     decrypted_lists = []
     rated_list = []
-    for each_line in loh:
+    for each_line in in1:
         decrypted_lists.append(xorbrute(each_line.decode('hex')))
     for  each_list in decrypted_lists:
         rated_list.append(engdetec(each_list))

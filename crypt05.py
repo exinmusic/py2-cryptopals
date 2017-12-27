@@ -16,6 +16,6 @@ def repeatingByteXor(in1, key1):
 
 # Test inputs for cryptopals s1-c5
 
-in1 = "Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal"
-key1 = 'ICE'
-print repeatingByteXor(in1,key1)
+#in1 = "Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal"
+#key1 = 'ICE'
+#print repeatingByteXor(in1,key1)

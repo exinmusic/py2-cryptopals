@@ -47,9 +47,9 @@ def breakRepeatingKeyXor(in1,loR,hiR):
 	return englishDetection(outputs)
 
 # Test inputs for cryptopals s1-c6 PART 2/2
-chlng6 = urllib2.urlopen("https://cryptopals.com/static/challenge-data/6.txt").readlines()
-chlng6 = ''.join(chlng6)
-chlng6 = chlng6.decode('base64')
+#chlng6 = urllib2.urlopen("https://cryptopals.com/static/challenge-data/6.txt").readlines()
+#chlng6 = ''.join(chlng6)
+#chlng6 = chlng6.decode('base64')
 
 # Returns an englishDetection output with key appended, (score,"data string",key)
-print breakRepeatingKeyXor(chlng6,2,41)
+#print breakRepeatingKeyXor(chlng6,2,41)
